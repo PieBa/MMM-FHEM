@@ -97,7 +97,7 @@ Module.register('MMM-FHEM', {
         if (self.config.devices[index].deviceReadings[indexValue].suffix) {
           valueWrapper.innerHTML += self.config.devices[index].deviceReadings[indexValue].suffix;
         }
-        valueWrapper.className = 'value medium bright';
+        valueWrapper.className = 'value medium bright ' + value;
         deviceWrapper.appendChild(valueWrapper);
       });
 
